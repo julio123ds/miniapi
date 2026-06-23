@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JXNKA Barber Shop</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#000;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('imagenes/portada.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    color:#d4af37;
+}
+
+.hero-content p{
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.titulo{
+    text-align:center;
+    color:#d4af37;
+    margin-bottom:40px;
+}
+
+.servicios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card h3{
+    color:#d4af37;
+}
+
+.precio{
+    font-size:2rem;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+.contacto{
+    text-align:center;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+nav{
+    flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">
+💈 JXNKA
+</div>
+
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>JXNKA BARBER SHOP</h1>
+
+<p>
+Cortes clásicos, diseño de barba y cuidado facial.
+</p>
+
+<a href="https://wa.me/51977135404" class="btn">
+Reservar por WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Sobre Nosotros</h2>
+
+<p style="text-align:center; max-width:800px; margin:auto;">
+Somos una barbería ubicada en Los Saires de Oquendo especializada en cortes modernos,
+diseño de barba y atención personalizada para cada cliente.
+</p>
+
+</section>
+
+<section id="servicios">
+
+<h2 class="titulo">Nuestros Servicios</h2>
+
+<div class="servicios">
+
+<div class="card">
+<h3>Corte Clásico</h3>
+<p class="precio">S/10</p>
+</div>
+
+<div class="card">
+<h3>Corte + Diseño de Barba</h3>
+<p class="precio">S/15</p>
+</div>
+
+<div class="card">
+<h3>Corte + Diseño de Barba + Mascarilla Facial</h3>
+<p class="precio">S/20</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2 class="titulo">Trabajos Realizados</h2>
+
+<div class="galeria">
+
+<img src="imagenes/local.jpeg">
+<img src="imagenes/corte1.jpeg">
+<img src="imagenes/corte3.jpg">
+<img src="imagenes/corte4.jpg">
+<img src="imagenes/corte5.jpg">
+<img src="imagenes/corte6.jpg">
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2 class="titulo">Contacto</h2>
+
+<div class="contacto">
+
+<p>📍 Mz L Lote 45 - Los Saires de Oquendo</p>
+
+<p>📱 977 135 404</p>
+
+<p>🕑 2:00 PM a 11:00 PM</p>
+
+<br>
+
+<a href="https://wa.me/51977135404" class="btn">
+Agendar Cita
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 JXNKA Barber Shop</p>
+</footer>
+
+<a href="https://wa.me/51977135404" class="whatsapp">
+💬
+</a>
+
+</body>
+</html>
